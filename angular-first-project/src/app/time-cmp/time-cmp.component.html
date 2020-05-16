@@ -1,0 +1,8 @@
+<label>Enter First Number : </label><input [(ngModel)]="values.val1" id="Text1" type="number" (keyup.enter)="onEnter()"/>
+<br/>
+<label>Enter Second Number : </label><input [(ngModel)]="values.val2" id="Text2" type="number" (keyup.enter)="onEnter()"/>
+<br/>
+<label>Result : </label><input [(ngModel)]="values.val3" id="txtresult" />
+<br/>
+<br/>
+<button id="btn" name="clickbtn"  [disabled]="values.val1 == null || values.val2 == null" (click)="onSelect()">Display Result</button>
